@@ -11,7 +11,7 @@
     --surface: #111111;
     --surface2: #1a1a1a;
     --border: #222222;
-    --accent: #e8ff3b;
+    --accent: #a855f7;
     --accent2: #ff4d6d;
     --text: #f0ede8;
     --muted: #6b6b6b;
@@ -201,7 +201,7 @@ nav {
     align-items: center;
     gap: 0.5rem;
     background: var(--accent);
-    color: #0a0a0a;
+    color: #ffffff;
     padding: 0.85rem 2rem;
     font-family: var(--font-mono);
     font-weight: 500;
@@ -265,6 +265,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
+    border-color: #7c3aed;
 }
 
 .hero-circle:nth-child(2) {
@@ -272,7 +273,7 @@ nav {
     height: 75%;
     top: 12.5%;
     left: 12.5%;
-    border-color: #222;
+    border-color: #f472b6;
     animation-direction: reverse;
     animation-duration: 15s;
 }
@@ -617,7 +618,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, transparent 60%, rgba(232, 255, 59, 0.04));
+    background: linear-gradient(135deg, transparent 60%, rgba(168, 85, 247, 0.04));
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -644,7 +645,7 @@ section {
 }
 
 .project-card:hover .project-num {
-    color: rgba(232, 255, 59, 0.12);
+    color: rgba(168, 85, 247, 0.12);
 }
 
 .project-tag-row {
@@ -658,7 +659,7 @@ section {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 0.2rem 0.6rem;
-    background: rgba(232, 255, 59, 0.1);
+    background: rgba(168, 85, 247, 0.1);
     color: var(--accent);
 }
 
@@ -860,7 +861,7 @@ section {
 
 .form-btn {
     background: var(--accent);
-    color: #0a0a0a;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     font-family: var(--font-mono);
