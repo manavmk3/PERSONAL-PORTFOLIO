@@ -28,13 +28,13 @@ body {
     background: var(--bg);
     color: var(--text);
     font-family: var(--font-mono);
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
     overflow-x: hidden;
     cursor: none;
 }
 
-/* ============ NOISE OVERLAY ============ */
+
 body::before {
     content: '';
     position: fixed;
@@ -45,7 +45,7 @@ body::before {
     pointer-events: none;
 }
 
-/* ============ CUSTOM CURSOR ============ */
+
 .cursor {
     position: fixed;
     top: 0;
@@ -77,7 +77,7 @@ body::before {
     left: 0;
 }
 
-/* ============ NAVIGATION ============ */
+
 nav {
     position: fixed;
     top: 0;
@@ -113,7 +113,7 @@ nav {
 .nav-links a {
     color: var(--muted);
     text-decoration: none;
-    font-size: 11px;
+    font-size: 17px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     transition: color 0.2s;
@@ -123,7 +123,7 @@ nav {
     color: var(--accent);
 }
 
-/* ============ HERO ============ */
+
 #hero {
     min-height: 100vh;
     display: grid;
@@ -146,7 +146,7 @@ nav {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 11px;
+    font-size: 17px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
@@ -177,17 +177,17 @@ nav {
 .hero-title {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: 1.6rem;
+    font-size: 2.3rem;
     color: var(--muted);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero-desc {
-    font-size: 13px;
+    font-size: 19px;
     color: var(--muted);
-    max-width: 380px;
-    line-height: 1.9;
-    margin-bottom: 3rem;
+    max-width: 420px;
+    line-height: 1.8;
+    margin-bottom: 2rem;
 }
 
 .hero-cta {
@@ -239,7 +239,7 @@ nav {
     color: var(--accent);
 }
 
-/* Hero right graphic */
+
 .hero-right {
     position: relative;
     display: flex;
@@ -374,7 +374,7 @@ nav {
     }
 }
 
-/* ============ MARQUEE ============ */
+
 .marquee-wrap {
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -417,14 +417,14 @@ nav {
     font-size: 0.6rem;
 }
 
-/* ============ SHARED SECTION STYLES ============ */
+
 section {
     position: relative;
     z-index: 1;
 }
 
 .section-label {
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--accent);
@@ -450,12 +450,12 @@ section {
     margin-bottom: 3rem;
 }
 
-/* ============ ABOUT ============ */
+
 #about {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 6rem;
+    gap: 4rem;
     border-top: 1px solid var(--border);
     max-width: 1400px;
     margin: 0 auto;
@@ -488,7 +488,7 @@ section {
 }
 
 .stat-label {
-    font-size: 11px;
+    font-size: 17px;
     color: var(--muted);
     letter-spacing: 0.1em;
     margin-top: 0.3rem;
@@ -496,18 +496,18 @@ section {
 
 .about-text p {
     color: var(--muted);
-    line-height: 2;
+    line-height: 1.9;
     margin-bottom: 1.2rem;
-    font-size: 13px;
+    font-size: 19px;
 }
 
 .about-text strong {
     color: var(--text);
 }
 
-/* ============ SKILLS ============ */
+
 #skills {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
     border-top: 1px solid var(--border);
     max-width: 1400px;
     margin: 0 auto;
@@ -571,7 +571,7 @@ section {
 }
 
 .skill-tag {
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 0.3rem 0.7rem;
@@ -585,9 +585,9 @@ section {
     color: var(--accent);
 }
 
-/* ============ PROJECTS ============ */
+
 #projects {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
     border-top: 1px solid var(--border);
     max-width: 1400px;
     margin: 0 auto;
@@ -654,7 +654,7 @@ section {
 }
 
 .project-tag {
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 0.2rem 0.6rem;
@@ -673,7 +673,7 @@ section {
 
 .project-desc {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 19px;
     line-height: 1.9;
     margin-bottom: 2rem;
 }
@@ -686,7 +686,7 @@ section {
 }
 
 .stack-item {
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 0.08em;
     padding: 0.25rem 0.6rem;
     border: 1px solid var(--border);
@@ -699,7 +699,7 @@ section {
 }
 
 .project-link {
-    font-size: 11px;
+    font-size: 17px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--muted);
@@ -722,9 +722,9 @@ section {
     transform: translate(3px, -3px);
 }
 
-/* ============ EDUCATION ============ */
+
 #education {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
     border-top: 1px solid var(--border);
     max-width: 1400px;
     margin: 0 auto;
@@ -768,7 +768,7 @@ section {
 }
 
 .edu-year {
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 0.2em;
     color: var(--accent);
     margin-bottom: 0.5rem;
@@ -784,18 +784,18 @@ section {
 
 .edu-school {
     color: var(--muted);
-    font-size: 12px;
+    font-size: 18px;
 }
 
-/* ============ CONTACT ============ */
+
 #contact {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
     border-top: 1px solid var(--border);
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .contact-big {
@@ -811,7 +811,7 @@ section {
 
 .contact-sub {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.9;
     margin-top: 1.5rem;
     max-width: 360px;
@@ -830,7 +830,7 @@ section {
 }
 
 .form-label {
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--muted);
@@ -842,7 +842,7 @@ section {
     border: 1px solid var(--border);
     color: var(--text);
     font-family: var(--font-mono);
-    font-size: 13px;
+    font-size: 16px;
     padding: 0.8rem 1rem;
     outline: none;
     transition: border-color 0.2s;
@@ -877,7 +877,7 @@ section {
     background: var(--text);
 }
 
-/* ============ FOOTER ============ */
+
 footer {
     border-top: 1px solid var(--border);
     padding: 2rem 3rem;
@@ -889,7 +889,7 @@ footer {
 }
 
 .footer-copy {
-    font-size: 11px;
+    font-size: 14px;
     color: var(--muted);
 }
 
@@ -899,7 +899,7 @@ footer {
 }
 
 .footer-socials a {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
@@ -911,7 +911,7 @@ footer {
     color: var(--accent);
 }
 
-/* ============ SCROLL REVEAL ============ */
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -923,7 +923,7 @@ footer {
     transform: translateY(0);
 }
 
-/* ============ RESPONSIVE ============ */
+
 @media (max-width: 900px) {
     #hero {
         grid-template-columns: 1fr;

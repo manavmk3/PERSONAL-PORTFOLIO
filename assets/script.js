@@ -5,7 +5,7 @@ const ring = document.getElementById('cursorRing');
 let mouseX = 0, mouseY = 0;
 let ringX = 0, ringY = 0;
 
-// Move dot instantly with mouse
+
 document.addEventListener('mousemove', function (e) {
     mouseX = e.clientX;
     mouseY = e.clientY;
@@ -13,7 +13,7 @@ document.addEventListener('mousemove', function (e) {
     dot.style.top = mouseY + 'px';
 });
 
-// Animate ring with smooth lag
+
 function animateRing() {
     ringX += (mouseX - ringX) * 0.12;
     ringY += (mouseY - ringY) * 0.12;
@@ -23,7 +23,7 @@ function animateRing() {
 }
 animateRing();
 
-// Scale ring on hover over interactive elements
+
 const interactiveEls = document.querySelectorAll(
     'a, button, .project-card, .skill-card, .stat-box'
 );
@@ -40,7 +40,7 @@ interactiveEls.forEach(function (el) {
 });
 
 
-/* ============ SCROLL REVEAL ============ */
+
 const reveals = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver(function (entries) {
@@ -57,7 +57,7 @@ reveals.forEach(function (el) {
 });
 
 
-/* ============ ACTIVE NAV HIGHLIGHT ============ */
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -80,19 +80,19 @@ window.addEventListener('scroll', function () {
 });
 
 
-/* ============ CONTACT FORM ============ */
+
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // Visual feedback
+
     submitBtn.textContent = 'Sent! ✓';
     submitBtn.style.background = '#3dff8f';
     submitBtn.style.pointerEvents = 'none';
 
-    // Reset after 3 seconds
+
     setTimeout(function () {
         submitBtn.textContent = 'Send Message →';
         submitBtn.style.background = '';
@@ -102,7 +102,7 @@ contactForm.addEventListener('submit', function (e) {
 });
 
 
-/* ============ NAV SCROLL SHADOW ============ */
+
 const navEl = document.querySelector('nav');
 
 window.addEventListener('scroll', function () {
