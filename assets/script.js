@@ -63,12 +63,18 @@ const navLinks = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', function () {
     let current = '';
+    const scrollBottom = window.scrollY + window.innerHeight;
+    const pageHeight = document.documentElement.scrollHeight;
 
-    sections.forEach(function (section) {
-        if (window.scrollY >= section.offsetTop - 120) {
-            current = section.id;
-        }
-    });
+    if (scrollBottom >= pageHeight - 50) {
+        current = sections[sections.length - 1].id;
+    } else {
+        sections.forEach(function (section) {
+            if (window.scrollY >= section.offsetTop - 120) {
+                current = section.id;
+            }
+        });
+    }
 
     navLinks.forEach(function (link) {
         if (link.getAttribute('href') === '#' + current) {
