@@ -31,7 +31,7 @@ body {
     font-size: 18px;
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath fill='%23a855f7' stroke='%23ffffff' stroke-width='1.5' d='M5.5 2v20l6-6 4 10 3-1-3-9h7z'/%3E%3C/svg%3E"), auto;
+    cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 32 32'%3E%3Cpath fill='%23a855f7' stroke='%23ffffff' stroke-width='1.5' d='M5.5 2v20l6-6 4 10 3-1-3-9h7z'/%3E%3C/svg%3E"), auto;
 }
 
 
@@ -900,6 +900,44 @@ section {
     max-width: 360px;
 }
 
+.contact-direct {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-direct a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: var(--font-mono);
+}
+
+.contact-direct a svg {
+    color: var(--muted);
+    transition: color 0.2s;
+}
+
+.contact-direct a:hover {
+    background: var(--surface2);
+    border-color: var(--accent);
+    color: var(--text);
+}
+
+.contact-direct a:hover svg {
+    color: var(--accent);
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -982,12 +1020,15 @@ footer {
 }
 
 .footer-socials a {
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--muted);
     text-decoration: none;
     transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
 }
 
 .footer-socials a:hover {
