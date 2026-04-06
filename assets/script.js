@@ -1,45 +1,4 @@
 
-const dot = document.getElementById('cursorDot');
-const ring = document.getElementById('cursorRing');
-
-let mouseX = 0, mouseY = 0;
-let ringX = 0, ringY = 0;
-
-
-document.addEventListener('mousemove', function (e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    dot.style.left = mouseX + 'px';
-    dot.style.top = mouseY + 'px';
-});
-
-
-function animateRing() {
-    ringX += (mouseX - ringX) * 0.12;
-    ringY += (mouseY - ringY) * 0.12;
-    ring.style.left = ringX + 'px';
-    ring.style.top = ringY + 'px';
-    requestAnimationFrame(animateRing);
-}
-animateRing();
-
-
-const interactiveEls = document.querySelectorAll(
-    'a, button, .project-card, .skill-card, .stat-box'
-);
-
-interactiveEls.forEach(function (el) {
-    el.addEventListener('mouseenter', function () {
-        ring.style.transform = 'translate(-50%, -50%) scale(1.8)';
-        ring.style.borderColor = 'var(--accent2)';
-    });
-    el.addEventListener('mouseleave', function () {
-        ring.style.transform = 'translate(-50%, -50%) scale(1)';
-        ring.style.borderColor = 'var(--accent)';
-    });
-});
-
-
 
 const reveals = document.querySelectorAll('.reveal');
 
@@ -118,3 +77,18 @@ window.addEventListener('scroll', function () {
         navEl.style.boxShadow = 'none';
     }
 });
+
+const tracks = ['Starboy - The Weeknd', 'Blinding Lights - The Weeknd', 'Midnight City - M83', 'Save Your Tears - The Weeknd'];
+let tIndex = 0;
+const spTrack = document.getElementById('spTrack');
+if (spTrack) {
+    spTrack.style.transition = 'opacity 0.2s';
+    setInterval(() => {
+        tIndex = (tIndex + 1) % tracks.length;
+        spTrack.style.opacity = '0';
+        setTimeout(() => { 
+            spTrack.textContent = tracks[tIndex];
+            spTrack.style.opacity = '1'; 
+        }, 200);
+    }, 5000); 
+}
