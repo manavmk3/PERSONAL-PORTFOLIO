@@ -184,9 +184,9 @@ nav {
 }
 
 .btn-primary:hover {
-    background: var(--text);
+    background: #c084fc;
     transform: translate(-2px, -2px);
-    box-shadow: 4px 4px 0 var(--accent);
+    box-shadow: 4px 4px 0 rgba(168, 85, 247, 0.5);
 }
 
 .btn-ghost {
